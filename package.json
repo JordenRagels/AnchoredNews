@@ -1,0 +1,27 @@
+{
+  "name": "anchorednews",
+  "version": "1.0.0",
+  "description": "Node | Express | mongoDB | mongoose | Cheerio | Handlebars ​ ## Description ​ This is a full-stack application that scrapes the latest articles from The Hawaiian Tribune Herald website.  Users can click the 'Scrape Articles' button to retrieve the most recent news headlines. ​ Articles can also be saved to another page on the website where users can then add comments to their favorite articles, and also delete them. ​ This is possible using the CRUD method for mongoDB. ​ ## Demo ​ Application is deployed to Heroku and can accessed for",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordenRagels/AnchoredNews.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JordenRagels/AnchoredNews/issues"
+  },
+  "homepage": "https://github.com/JordenRagels/AnchoredNews#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.7.13"
+  }
+}
