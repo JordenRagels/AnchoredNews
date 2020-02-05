@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-let Schema = mongoose.Schema;
-let headlineSchema = new Schema({
+const Schema = mongoose.Schema;
+const headlineSchema = new Schema({
     headline: {
         type: String,
         required: true,
@@ -20,14 +20,15 @@ let headlineSchema = new Schema({
         required: true,
     },
     date: {
-        type: date,
+        type: Date,
         default: Date.now,
     },
     saved: {
         type: Boolean,
         default: false,
     }
-})
+});
 
 const Headline = mongoose.model("Headline", headlineSchema);
+
 module.exports = Headline;
